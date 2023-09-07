@@ -1,8 +1,12 @@
 #include <stdio.h>
+
+/**
+ * main - prints "Programming is like building a multilingual puzzle
+ * return 0
+ */
 int main(void)
 {
 	/*Simple Hello World program in C.*/
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
-/*main() is the starting point program*/
