@@ -2,11 +2,9 @@
 
 
 /**
- * main - prints "Programming is like building a multilingual
- * puzzle, followed by a new line.
- */
-/**
- * main - return  0.
+ * main - prints the value of the puts function.
+ * Return: It is zreo for the main.
+ * And this stops the execution of the program.
  */
 int main(void)
 {
