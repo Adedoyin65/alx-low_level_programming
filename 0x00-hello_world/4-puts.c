@@ -6,7 +6,7 @@
  * puzzle, followed by a new line.
  */
 /**
- * Return -  0.
+ * main - return  0.
  */
 int main(void)
 {
