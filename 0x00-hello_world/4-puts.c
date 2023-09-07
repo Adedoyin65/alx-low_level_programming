@@ -1,4 +1,3 @@
-// Simple Hello World program in C.
 #include <stdio.h>
 int main(void)
 {
@@ -6,3 +5,4 @@ int main(void)
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
+/*main() is the starting point program*/
