@@ -15,6 +15,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%d is positive\n %d is negative\n %d is zero\n", n);
+	printf("%d is positive\n", n);
 	return (0);
 }
