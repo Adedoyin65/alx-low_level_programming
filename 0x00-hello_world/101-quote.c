@@ -1,5 +1,10 @@
 #include <unistd.h>
 
+
+/**
+ * main - Prints "and that piece of art is useful".
+ * Return: Always 1.
+ * */
 int main(void)
 {
 		write(2,
