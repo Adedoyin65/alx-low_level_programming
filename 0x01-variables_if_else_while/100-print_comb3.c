@@ -9,17 +9,23 @@
 
 int main(void)
 {
-	int num;
+	int d, p;
 
-	for (num = 0; num <= 89; num++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar((num / 10) + '0');
-		putchar((num % 10) + '0');
-		if (num != 89)
-		{
-		putchar(',');
-		putchar(' ');
-		}
+	for (p = '0'; p <= '9'; p++)
+	{
+	if (d < i)
+	{
+	putchar(d);
+	putchar(p);
+	if (d != '8' || (d == '8' && p != '9'))
+	{
+	putchar(',');
+	putchar(' ');
+	}
+	}
+	}
 	}
 	putchar('\n');
 	return (0);
