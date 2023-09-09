@@ -9,24 +9,18 @@
 
 int main(void)
 {
-	int d, p;
+	int num;
 
-	for (d = '0'; d < '9'; d++)
+	for (num = 0; num <= 99; num++)
 	{
-	for (p = d + 1; p <= '9'; p++)
-	{
-	if (p != d)
-	{
-	putchar(p);
-	putchar(d);
-	if (d == '8' && p == '9')
-	continue;
-	putchar(',');
-	putchar(' ');
-	}
-	}
+		putchar((num / 10) + '0');
+		putchar((num % 10) + '0');
+		if (num != 99)
+		{
+		putchar(',');
+		putchar(' ');
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
