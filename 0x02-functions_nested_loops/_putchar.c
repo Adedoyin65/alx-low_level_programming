@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * _putchar - A program that prints _putchar.
+ * main - A program that prints _putchar.
  * Return: Always 0.
  */
 
