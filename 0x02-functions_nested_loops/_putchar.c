@@ -8,7 +8,7 @@
 
 
 int main()
-{;
+{
 	
 	putchar('_');
 	putchar('p');
