@@ -11,7 +11,6 @@ int main(void)
 	char a = '_', b = 'p', c ='u', d = 't', e = 'c', f = 'h', 
 	     g = 'a', h = 'r';
 	
-	putchar(abcdefgh);
-	putchar("\n");
+	putchar("%c%c%c%c%c%c%c%c\n");
 	return (0);
 }
