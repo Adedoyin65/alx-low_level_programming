@@ -3,12 +3,13 @@
 #include "main.h"
 
 /**
- * _putchar - A program that prints _putchar.
+ * main - A program that prints _putchar.
  * Return: Always 0.
  */
 
 
-int _putchar(char c)
+int _putchar(char c);
+int main(void)
 {
 	
 	putchar('_');
