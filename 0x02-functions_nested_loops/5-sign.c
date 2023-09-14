@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 
 /**
@@ -12,22 +13,17 @@ int print_sign(int n)
 {
 	if(n > 0)
 	{
-		putchar('+');
-		putchar('\n');
+		printf("+");
 		return (1);
-		
 	}
 	else if(n == 0)
 	{
-		putchar('0');
-		putchar('\n');
+		printf("0");
 		return (0);
-
 	}
 	else
 	{
-		putchar('-');
-		putchar('\n');
+		printf("-");
 		return (-1);
 	}
 }
