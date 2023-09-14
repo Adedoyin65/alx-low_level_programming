@@ -6,19 +6,17 @@
  * RETURN: 1 for success, 0 for failure.
  */
 
-/* int c is the input parameter*/
-int _islower(int c)
+
+int _islower(int c) // c is the input integer
 {
 
 
 	if (islower(c))
 	{
-		/*returns 1 for true*/
 		return (1);
 	}
 	else
 	{
-		/*returns 0 for false*/
 		return (0);
 	}
 }
