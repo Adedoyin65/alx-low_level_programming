@@ -3,7 +3,8 @@
 
 /**
  * _islower - A function that checks for lowercase.
- * RETURN: 1 for success, 0 for failure.
+ * @c: The character to print.
+ * Return: 1 for success, 0 for failure.
  */
 
 
