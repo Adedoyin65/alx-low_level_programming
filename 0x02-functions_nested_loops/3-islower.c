@@ -7,7 +7,7 @@
  */
 
 
-int _islower(int c) // c is the input integer
+int _islower(int c)
 {
 
 
