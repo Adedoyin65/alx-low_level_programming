@@ -1,7 +1,7 @@
 #include <ctype.h>
 
 /**
- * _isalpha(int c) - A function that checks for alphabetic.
+ * _isalpha - A function that checks for alphabetic.
  * RETURN: 1 for success, 0 for failure.
  */
 
