@@ -3,7 +3,7 @@
 
 
 /**
- * print_alphabet_x10.c - A function that prints 10 times the alphabet.
+ * print_alphabet_x10 - A function that prints 10 times the alphabet.
  */
 
 
