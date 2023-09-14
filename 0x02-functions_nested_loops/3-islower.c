@@ -3,8 +3,7 @@
 
 /**
  * _islower - A function that checks for lowercase.
- * c - This is the input integer.
- * islower(c) - returns 1 for true, 0 for false.
+ * int c - This is the input integer.
  * RETURN: 1 for success, 0 for failure.
  */
 
