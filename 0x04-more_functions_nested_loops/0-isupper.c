@@ -2,6 +2,7 @@
 
 /**
  * int _isupper(int c) - function that checks for uppercase.
+ * @c: The number to check.
  * Return: 1 for success, 0 for failure
  */
 
