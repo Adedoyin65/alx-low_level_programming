@@ -12,6 +12,19 @@
 char *_strcat(char *dest, char *src)
 {
 
-	printf("%c", *dest + *src);
+	int n,i;
+
+	while (dest[n])
+	{
+		n++;
+	}
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[n] = src[i];
+		n++;
+	}
+	dest[n] = '\0';
 	return (dest);
+
+
 }
