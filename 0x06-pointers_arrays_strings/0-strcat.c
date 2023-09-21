@@ -4,12 +4,14 @@
 
 /**
  * _strcat - Write a function that concatenates two strings.
+ * @dest: The first string.
+ * @src: The second string.
  * Return: return dest.
  */
 
 char *_strcat(char *dest, char *src)
 {
 
-	printf("%c\n",*dest + *src);
-	return dest;
+	printf("%c\n", *dest + *src);
+	return (dest);
 }
