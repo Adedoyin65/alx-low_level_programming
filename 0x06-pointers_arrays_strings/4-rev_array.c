@@ -2,7 +2,7 @@
 
 
 /**
- * reverse_array - Write a function that reverses the content of an array of integers.
+ * reverse_array - Write a function that reverses the content.
  * @a: The Firat array
  * @n: number of elements
  */
