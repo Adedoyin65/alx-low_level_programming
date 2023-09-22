@@ -9,23 +9,28 @@
 
 char *cap_string(char *str)
 {
-	int dan = 1;
+	int index = 0;
 
-	for (int i = 0; str[i] != '\0'; i++)
+	while (str[index])
 	{
-		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] =='(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
-		{
-			dan = 1;
-		}
-		else if (dan && isalpha(str[i]))
-		{
-			str[i] = toupper(str[i]);
-			dan = 0;
-		}
-		else
-		{
-			str[i] = tolower(str[i]);
-		}
+	while (!(str[index] >= 'a' && str[index] <= 'z'))
+	index++;
+	if (str[index - 1] == ' ' ||
+	str[index - 1] == '\t' ||
+	str[index - 1] == '\n' ||
+	str[index - 1] == ',' ||
+	str[index - 1] == ';' ||
+	str[index - 1] == '.' ||
+	str[index - 1] == '!' ||
+	str[index - 1] == '?' ||
+	str[index - 1] == '"' ||
+	str[index - 1] == '(' ||
+	str[index - 1] == ')' ||
+	str[index - 1] == '{' ||
+	str[index - 1] == '}' ||
+	index == 0)
+	str[index] -= 32;
+	index++;
 	}
 	return (str);
 }
