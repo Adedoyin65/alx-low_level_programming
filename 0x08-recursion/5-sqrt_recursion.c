@@ -1,7 +1,7 @@
 #include <math.h>
 
 /**
- * sqrt - returns the natural square root.
+ * sqrt_a - returns the natural square root.
  * @a: Input number.
  * @b: square root.
  * Return: square root of function or -1.
