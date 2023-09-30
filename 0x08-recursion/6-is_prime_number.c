@@ -15,7 +15,7 @@ int is_divisible(int n, int divisor)
 	}
 	if (divisor == 2)
 	{
-		return (n % 2 == 0) ? 1 : 0;
+		return ((n % 2 == 0) ? 1 : 0);
 	}
 	if (n % divisor == 0)
 	{
@@ -42,6 +42,6 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	return (!is_divisible(n, n-1));
+	return (!is_divisible(n, n - 1));
 
 }
