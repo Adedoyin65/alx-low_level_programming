@@ -10,6 +10,8 @@
 
 int is_prime_number(int n)
 {
+	int i, w;
+
 	if (n <= 1)
 	{
 		return (0);
@@ -22,12 +24,19 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	for (int i = 5; i * i <= n; i += 6)
+
+	i = 5;
+	w = 2;
+
+	while (i * i <= n)
 	{
-		if (n % i == 0 || n % (i + 2) == 0)
+		if (n % i == 0)
 		{
 			return (0);
 		}
+		i += w;
+		w = 6 - w;
 	}
 	return (1);
+
 }
