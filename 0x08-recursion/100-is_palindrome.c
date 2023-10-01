@@ -14,17 +14,14 @@ int is_palindrome(char *s)
 
 	i = 0;
 	h = strlen(s) - 1;
-
-	while (h > i)
+	
+	if (s[i++] != s[h--])
 	{
-		if (s[i++] != s[h--])
-		{
-			return (0);
-		}
-		else if (s[i++] == s[h--])
-		{
-			return (1);
-		}
+		return (0);
+	}
+	else if (s[i++] == s[h--])
+	{
+		return (1);
 	}
 	return (0);
 }
