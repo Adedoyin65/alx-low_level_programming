@@ -1,6 +1,13 @@
 #include <stdio.h>
 
 
+/**
+ * main - Writes the name of a function
+ * @argc: Argument count.
+ * @argv: Argument vector.
+ * Return: Always 0.
+ */
+
 int main(int argc, char *argv[])
 {
 	int i;
