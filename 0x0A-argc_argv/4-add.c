@@ -30,6 +30,11 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		if (num <= 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
 		Result += num;
 	}
 	printf("%d\n", Result);
