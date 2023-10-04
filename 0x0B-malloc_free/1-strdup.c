@@ -4,7 +4,7 @@
 
 
 /**
- * _strdup - function that returns a pointer to a newly 
+ * _strdup - function that returns a pointer to a newly
  * allocated space in memory
  * @str: Input string.
  * Return: - returns a pointer to the duplicated string.
@@ -12,8 +12,8 @@
 
 char *_strdup(char *str)
 {
-	size_t len = strlen (str);
-	char *a = (char *)malloc((len + 1)* sizeof(char));
+	size_t len = strlen(str);
+	char *a = (char *)malloc((len + 1) * sizeof(char));
 
 	if (str == NULL)
 	{
@@ -23,6 +23,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	strcpy (a, str);
+	strcpy(a, str);
 	return (a);
 }
