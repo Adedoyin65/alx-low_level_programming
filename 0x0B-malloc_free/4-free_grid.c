@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - A function that frees a 2 dimensional grid 
+ * free_grid - A function that frees a 2 dimensional grid
  * previously created by your alloc_grid function.
  * @grid: The grid.
  * @height: The height.
