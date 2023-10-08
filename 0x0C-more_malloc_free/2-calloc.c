@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _calloc - Write a function that allocates memory for an array, 
+ * _calloc - Write a function that allocates memory for an array,
  * using malloc
  * @nmemb: Number of element in an array.
  * @size: Size of an element in array.
