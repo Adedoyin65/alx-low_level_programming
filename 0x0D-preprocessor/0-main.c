@@ -4,7 +4,7 @@
 
 /**
  * main - check the code
- * 
+ *
  * Return: Always 0.
  */
 int main(void)
@@ -13,5 +13,5 @@ int main(void)
 
 	    s = 98 + SIZE;
 	    printf("%d\n", s);
-	    return (0);
+return (0);
 }
