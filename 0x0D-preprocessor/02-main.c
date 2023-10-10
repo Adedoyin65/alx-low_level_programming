@@ -2,7 +2,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-#define Daniel "2-main.c"
+#define Name
 
 #endif /* HEADER_FILE */
 
