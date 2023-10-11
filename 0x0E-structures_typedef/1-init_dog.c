@@ -7,7 +7,7 @@
  * @name: Name of dog.
  * @age: Age of dog.
  * @owner: Dog owner.
- * Return: 0.
+ * Return: Nothing.
  */
 
 
