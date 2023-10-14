@@ -10,14 +10,15 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *sep= ", ";
+	char *sep = ", ";
 
 	va_list p;
+
 	va_start(p, format);
 
 	while (format[i] != '\0')
 	{
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 			printf("%c%s", va_arg(p, int), sep);
