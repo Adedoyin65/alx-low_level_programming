@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
  * print_all -  a function that prints anything.
  * @format: Various data type.
  * Return: Nothing.
  */
-
 void print_all(const char * const format, ...)
 {
 	va_list p;
@@ -48,6 +46,5 @@ void print_all(const char * const format, ...)
 				break;
 		} i++;
 	}
-	va_end(p);
-	printf("\n");
+	va_end(p), printf("\n");
 }
