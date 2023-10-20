@@ -51,8 +51,6 @@ list_t *add_node_end(list_t **head, const char *str)
 				dan = dan->next;
 			}
 			dan->next = new_node;
-		}
-		return (new_node);
-	}
-	return (0);
+		} return (new_node);
+	} return (0);
 }
