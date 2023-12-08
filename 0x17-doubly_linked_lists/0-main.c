@@ -17,12 +17,12 @@ int main(void)
 
 	    head = &hello;
 	    new = malloc(sizeof(dlistint_t));
-	    if (new == NULL)
-	    {
-		    dprintf(2, "Error: Can't malloc\n");
-		    return (EXIT_FAILURE);
-	    }
-	    new->n = 9;
+if (new == NULL)
+{
+	dprintf(2, "Error: Can't malloc\n");
+	return (EXIT_FAILURE);
+}
+new->n = 9;
 	    head->prev = new;
 	    new->next = head;
 	    new->prev = NULL;
@@ -30,5 +30,5 @@ int main(void)
 	    n = print_dlistint(head);
 	    printf("-> %lu elements\n", n);
 	    free(new);
-	    return (EXIT_SUCCESS);
+return (EXIT_SUCCESS);
 }
