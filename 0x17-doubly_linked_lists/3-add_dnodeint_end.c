@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - A function that adds a new node at the end of a dlist.
+ * add_dnodeint_end() - A function that adds a new node at the end of a dlist.
  * @head: A pointer.
  * @n: An integer.
  * Return: The address of the new element.
