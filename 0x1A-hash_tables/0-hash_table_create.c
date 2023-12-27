@@ -13,11 +13,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *new;
 
-	new = malloc(sizeof(struct hash_table_s));
+	new = malloc(sizeof(size));
 	if (new == NULL)
 	{
 		return (NULL);
 	}
-	new->array = malloc(sizeof(size));
 	return(new);
 }
