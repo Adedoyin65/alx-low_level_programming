@@ -1,0 +1,9 @@
+# A Makefile that uses varibles
+
+CC = gcc
+SRC = main.c school.c
+
+all: school
+	${CC} ${SRC} -o school
+school: main.c school.c
+	${CC} ${SRC} -o school
