@@ -1,0 +1,1 @@
+The average time complexity of a jump search in a singly linked list of size n, using step = sqrt(n), is O(√n).

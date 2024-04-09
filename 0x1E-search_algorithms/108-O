@@ -1,0 +1,1 @@
+The time complexity of a jump search in a skip list of size n, with an express lane using step = sqrt(n), in the average case is O(log n).
