@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /**
  * binary_search - A function that searches for a value in an array
  * of integers using the Linear search algorithm
@@ -19,7 +20,7 @@ int binary_search(int *array, size_t size, int value)
 	right = size - 1;
 	while (left <= right)
 	{
-		mid = (int)((left + right)/ 2);
+		mid = (int)floor((left + right)/ 2);
 		printf("Searching in array: ");
 		for (i = left; i <= right; i++)
 		{
