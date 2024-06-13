@@ -8,17 +8,17 @@
 int main(void)
 {
 	int n = 50;
-	int fib1 = 1, fib2 = 2;
-	int next_fib;
+	unsigned long long fib1 = 1, fib2 = 2;
+	unsigned long long next_fib;
 	int i;
 
 
-	printf("%d, %d", fib1, fib2);
+	printf("%llu, %llu", fib1, fib2);
 
 	for (i = 3; i <= n; i++)
 	{
 		next_fib = fib1 + fib2;
-		printf(", %d", next_fib);
+		printf(", %llu", next_fib);
 		fib1 = fib2;
 		fib2 = next_fib;
 	}
