@@ -2,29 +2,43 @@
 
 CC = gcc
 
+# Define the source files
 SRC = main.c school.c
 
+# Define the object files
 OBJ = $(SRC:.c=.o)
 
+# Define the name of the executable
 NAME = school
 
+# Define the command to remove files
+RM = rm -f
+
+# The all rule builds the target executable
 all: $(NAME)
 
+# Rule to build the target executable from object files
 $(NAME): $(OBJ)
-	$(CC) -o $@ $^
+	$(CC) -o $(NAME) $(OBJ)
 
+# Pattern rule to build object files from source files
 %.o: %.c
-	$(CC) -c $<
+	$(CC) -c $< -o $@
 
+# Rule to clean up Emacs and Vim temporary files along with the executable
 clean:
-	rm -f #*# *~ $(NAME)
+	$(RM) *~ \#* $(NAME)
 
+# Rule to clean up only object files
 oclean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
-fclean:
-	rm -f #*# *~ $(NAME) $(OBJ)
+# Rule to clean up everything: temporary files, object files, and the executable
+fclean: clean oclean
 
+# Rule to force recompilation of all source files
 re: fclean all
 
-.PHONY: clean oclean fclean re
+# Phony targets
+.PHONY: all clean oclean fclean re
+
