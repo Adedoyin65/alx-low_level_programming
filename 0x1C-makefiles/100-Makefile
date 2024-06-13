@@ -1,0 +1,46 @@
+# Updated makefile
+CC = gcc
+
+# Define the source files
+SRC = main.c school.c
+
+# Define the object files
+OBJ = $(SRC:.c=.o)
+
+# Define the name of the executable
+NAME = school
+
+# Define the compiler flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# The 'all' rule builds the target executable
+all: $(NAME)
+
+# Rule to build the target executable from object files
+$(NAME): $(OBJ)
+	$(CC) -o $@ $^
+
+# Individual rules to compile each source file into an object file
+main.o: main.c m.h
+	$(CC) -c main.c $(CFLAGS)
+
+school.o: school.c m.h
+	$(CC) -c school.c $(CFLAGS)
+
+# Rule to clean up Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) $(NAME)
+	$(RM) *~ \#*
+
+# Rule to clean up only object files
+oclean:
+	$(RM) $(OBJ)
+
+# Rule to clean up everything: temporary files, object files, and the executable
+fclean: clean oclean
+
+# Rule to force recompilation of all source files
+re: fclean all
+
+# Phony targets
+.PHONY: all clean oclean fclean re
